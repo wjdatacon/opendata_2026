@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공공데이터 제공 사이트 · 2026 원주시 공공데이터 활용 아이디어 공모전</title>
+  <meta name="description" content="공공데이터포털, 원주시, 협력기관에서 제공하는 공공데이터를 한곳에서 확인하세요." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="공공데이터 제공 사이트 · 2026 원주시 공공데이터 활용 아이디어 공모전" />
+  <meta property="og:description" content="협력기관 + 공공데이터포털, 원주시 등 9개 기관 데이터 사이트 모음" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/sub.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="opendata">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="홈으로">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>WJ DATACON</strong>
+          <em>2026</em>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="주 메뉴">
+        <ul>
+          <li><a href="index.html#about" data-nav="about">공모전 소개</a></li>
+          <li><a href="index.html#schedule" data-nav="schedule">일정</a></li>
+          <li><a href="index.html#awards" data-nav="awards">시상</a></li>
+          <li><a href="evaluation.html" data-nav="evaluation">심사 기준</a></li>
+          <li><a href="opendata.html" data-nav="opendata">공공데이터</a></li>
+          <li><a href="faq.html" data-nav="faq">FAQ</a></li>
+          <li class="nav-cta"><a href="index.html#apply" data-nav="apply">참가 신청</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sub-hero">
+      <div class="container sub-hero-inner">
+        <nav class="breadcrumb" aria-label="브레드크럼">
+          <a href="index.html">홈</a>
+          <span aria-hidden="true">/</span>
+          <span>공공데이터</span>
+        </nav>
+        <span class="sub-hero-tag">Open Data</span>
+        <h1 class="sub-hero-title">공공데이터 제공 사이트</h1>
+        <p class="sub-hero-desc">
+          공모전 협력기관과 공공데이터포털에서 다양한 데이터를 확인하실 수 있습니다.<br />
+          원주시 데이터를 활용한 아이디어는 가산점이 부여됩니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="data-filter" role="tablist" aria-label="기관 분류">
+          <button class="is-active" data-filter="all" role="tab" aria-selected="true">전체</button>
+          <button data-filter="partner" role="tab" aria-selected="false">협력기관</button>
+          <button data-filter="general" role="tab" aria-selected="false">공공데이터포털</button>
+        </div>
+
+        <div class="data-grid" id="dataGrid">
+          <a class="data-card" data-type="general" href="https://www.data.go.kr/" target="_blank" rel="noopener">
+            <span class="data-tag">공공데이터포털</span>
+            <h3>공공데이터포털</h3>
+            <p>대한민국 모든 공공기관이 보유한 공공데이터를 한곳에서 검색·활용.</p>
+            <span class="data-link">data.go.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="general" href="https://www.wonju.go.kr/" target="_blank" rel="noopener">
+            <span class="data-tag">주최기관</span>
+            <h3>원주시</h3>
+            <p>원주시 행정·도시·생활·통계 데이터. 가산점 대상 데이터의 출처.</p>
+            <span class="data-link">wonju.go.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.knps.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>국립공원공단</h3>
+            <p>전국 국립공원의 운영·탐방·자연자원 현황 데이터.</p>
+            <span class="data-link">knps.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.nhis.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>국민건강보험공단</h3>
+            <p>국민 건강·의료 이용·보험 운영 관련 통계 데이터.</p>
+            <span class="data-link">nhis.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.redcross.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>대한적십자사</h3>
+            <p>인도주의 활동, 재난 구호, 헌혈 등 사회 안전망 데이터.</p>
+            <span class="data-link">redcross.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.visitkorea.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>한국관광공사</h3>
+            <p>관광지·여행·콘텐츠 데이터. 지역 관광 분야 아이디어에 활용.</p>
+            <span class="data-link">visitkorea.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.komir.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>한국광해광업공단</h3>
+            <p>광해 방지·복원, 광업 운영 관련 데이터.</p>
+            <span class="data-link">komir.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.koroad.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>한국도로교통공단</h3>
+            <p>교통사고·도로교통 통계 데이터. 시민 안전 분야 활용 가능.</p>
+            <span class="data-link">koroad.or.kr ↗</span>
+          </a>
+          <a class="data-card" data-type="partner" href="https://www.bohun.or.kr/" target="_blank" rel="noopener">
+            <span class="data-tag partner">협력기관</span>
+            <h3>한국보훈복지의료공단</h3>
+            <p>보훈 대상자 복지·의료 운영 데이터.</p>
+            <span class="data-link">bohun.or.kr ↗</span>
+          </a>
+        </div>
+
+        <div class="sub-cta">
+          <div class="sub-cta-text">
+            <h2>데이터를 골랐다면 아이디어로 옮길 차례</h2>
+            <p>참가신청서·사업계획서 양식을 받아 작성을 시작하세요.</p>
+          </div>
+          <a class="btn btn-primary" href="index.html#apply">참가 신청하기</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>2026 원주시 공공데이터 활용 아이디어 공모전</strong>
+          <p>주최 원주시 · 주관 국립강원대학교 · 한라대학교</p>
+        </div>
+        <div class="footer-orgs">
+          <p class="footer-orgs-label">협력기관</p>
+          <ul>
+            <li>국립공원공단</li>
+            <li>국민건강보험공단</li>
+            <li>대한적십자사</li>
+            <li>한국관광공사</li>
+            <li>한국광해광업공단</li>
+            <li>한국도로교통공단</li>
+            <li>한국보훈복지의료공단</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-label">바로가기</p>
+          <ul>
+            <li><a href="evaluation.html">심사 기준</a></li>
+            <li><a href="opendata.html">공공데이터</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#contact">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="privacy.html">개인정보처리방침</a>
+        <p>© 2026 Wonju Open Data Contest. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+</body>
+</html>
