@@ -1,0 +1,7 @@
+.ref/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
