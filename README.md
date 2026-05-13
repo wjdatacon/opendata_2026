@@ -1,6 +1,8 @@
 # 2026 원주시 공공데이터 활용 아이디어 공모전 홈페이지
 
-하이브리드 구조 — 메인 원페이지(`index.html`) + 서브페이지 3개. 빌드 도구 없이 정적으로 동작합니다.
+하이브리드 구조 — 메인 원페이지(`index.html`) + 서브페이지 5개. 빌드 도구 없이 정적으로 동작합니다.
+
+**라이브 URL** — https://wjdatacon.github.io/opendata_2026/
 
 ## 구조
 
@@ -10,8 +12,9 @@ opendata_2026/
 ├── evaluation.html         # 서브 — 심사 기준
 ├── opendata.html           # 서브 — 공공데이터 사이트
 ├── faq.html                # 서브 — FAQ + 유의사항
-├── gallery.html            # 수상작 갤러리 (시상식 이후, 작업 예정)
-├── privacy.html            # 개인정보처리방침 (작업 예정)
+├── gallery.html            # 수상작 갤러리 (Coming Soon)
+├── privacy.html            # 개인정보처리방침
+├── favicon.svg             # 브랜드 마크 SVG 파비콘
 ├── css/
 │   ├── reset.css           # 리셋
 │   ├── variables.css       # 컬러/폰트/스페이싱 토큰
@@ -74,9 +77,18 @@ npx serve .
 - [x] 현재 진행 단계 stepper 자동 하이라이트
 - [x] 메인 페이지 섹션 / 서브 페이지 네비게이션 active 표시
 
-### Phase 5 — 마무리 (예정)
-- [ ] 페이지별 SEO 메타 태그 추가 보강
-- [ ] `privacy.html` 작성
-- [ ] `gallery.html` (Coming Soon 골격)
-- [ ] 실제 다운로드 파일(HWP) 및 기관 로고 추가
-- [ ] GitHub Pages 배포 설정
+### Phase 5 — 마무리 ✅
+- [x] 페이지별 SEO 메타 태그 보강 (canonical, og:url, theme-color, twitter:card)
+- [x] SVG 파비콘 (`favicon.svg`) 모든 페이지 연결
+- [x] `privacy.html` (개인정보처리방침 10개 조항 + 목차 + TOC 앵커)
+- [x] `gallery.html` Coming Soon 골격 (시상식 D-day 카운터 + 수상작 카드 placeholder 3개)
+- [x] GitHub Pages 배포 (https://wjdatacon.github.io/opendata_2026/)
+
+### 추가 작업 필요 항목 (외부 자산)
+- [ ] 실제 다운로드 파일 (`downloads/*.hwp` — 참가신청서/사업계획서/동의서)
+- [ ] 주최·주관·협력기관 로고 이미지 (`images/logo/`)
+- [ ] OG 공유용 썸네일 이미지 (1200×630)
+- [ ] 운영사무국 담당자 이메일/전화 확정
+- [ ] FAQ 실제 질문·답변 검토
+- [ ] 문의 폼 백엔드 연동 (Formspree 등)
+- [ ] 개인정보처리방침 본문 법무 검토
