@@ -411,11 +411,33 @@
 .apply-steps h3 { font-size: 18px; margin-bottom: 6px; }
 .apply-steps p { color: var(--text-secondary); font-size: 14.5px; }
 
+.apply-section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 56px 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.apply-section-eyebrow {
+  font-family: var(--font-mono), var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--primary-700);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.apply-section-title {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
 .download-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-bottom: 40px;
 }
 .download-card {
   display: flex;
