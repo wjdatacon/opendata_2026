@@ -7,7 +7,10 @@ body {
   color: var(--text-primary);
   background: var(--ivory);
   font-size: 16px;
+  line-height: var(--lh-base);
   letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .container {
   max-width: var(--container);
@@ -22,7 +25,7 @@ body {
   position: fixed;
   inset: 0 0 auto 0;
   height: var(--header-h);
-  background: rgba(254, 253, 251, 0.72);
+  background: rgba(250, 251, 247, 0.72);
   backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid transparent;
@@ -31,7 +34,7 @@ body {
 }
 .site-header.is-scrolled {
   border-bottom-color: var(--border);
-  background: rgba(254, 253, 251, 0.92);
+  background: rgba(250, 251, 247, 0.92);
 }
 .header-inner {
   height: 100%;
@@ -184,13 +187,15 @@ body {
   text-transform: uppercase;
 }
 .section-title {
-  font-size: clamp(28px, 3.5vw, 44px);
+  font-size: clamp(30px, 3.6vw, 48px);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  line-height: var(--lh-heading);
+  letter-spacing: -0.025em;
 }
 .section-desc {
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: 16.5px;
+  line-height: var(--lh-loose);
   max-width: 640px;
 }
 .section-desc strong { color: var(--primary-700); font-weight: 700; }
@@ -219,7 +224,7 @@ body {
    Footer
    ========================= */
 .site-footer {
-  background: linear-gradient(180deg, #2a2c25 0%, #15170f 100%);
+  background: linear-gradient(180deg, #1F2A1A 0%, #0B130A 100%);
   color: var(--text-on-dark);
   padding: 60px 0 28px;
   margin-top: 40px;

@@ -1,39 +1,45 @@
 :root {
-  /* Color — Brand (원주진회색 PANTONE 418C 계열) */
-  --primary-900: #2a2c25;
-  --primary-800: #3b3d36;
-  --primary-700: #51534A;   /* PANTONE 418C — 원주진회색 (공식 주조색) */
-  --primary-600: #6a6c5f;
-  --primary-500: #8a8c7e;
+  /* Color — Brand (원주연두색 PANTONE 576C 중심 · Fresh Green) */
+  --primary-900: #1F2A1A;   /* deep forest */
+  --primary-800: #3F5520;   /* dark moss */
+  --primary-700: #5D7E2C;   /* PANTONE 576C — 원주연두색 (메인) */
+  --primary-600: #7BAA5E;   /* sage */
+  --primary-500: #A8C97A;   /* light sage */
 
-  /* Color — Accent (원주연두색 PANTONE 576C · Greenery 14-0244) */
-  --accent: #5D7E2C;        /* PANTONE 576C — 원주연두색 */
-  --accent-cyan: #88B04B;   /* PANTONE 14-0244 — Greenery */
-  --accent-violet: #c8b878; /* warm olive-tan — 보조 강조 */
+  /* Color — Accent (mint teal · lime · warm goldenrod) */
+  --accent: #5EBA9A;        /* mint teal — 그라디언트 별 */
+  --accent-cyan: #C4E085;   /* lime pop */
+  --accent-violet: #EAD56C; /* warm goldenrod — 보조 포인트 */
 
-  /* Color — Surface (따뜻한 아이보리 — 자연 그린톤과 조화) */
-  --ivory: #fefdfb;
-  --ivory-soft: #fafaf5;
-  --surface: #ffffff;
-  --surface-muted: #f5f5ee;
-  --border: #e6e3d8;
-  --border-strong: #d3cfbe;
+  /* Color — Surface (밝은 아이보리-그린 톤) */
+  --ivory: #FAFBF7;
+  --ivory-soft: #F5F8EF;
+  --surface: #FFFFFF;
+  --surface-muted: #EEF3E5;
+  --border: #DCE5CC;
+  --border-strong: #BFCFA4;
 
   /* Color — Text */
-  --text-primary: #1c1e18;
-  --text-secondary: #52564c;
-  --text-tertiary: #9a9c8f;
-  --text-on-dark: #f8f7f0;
+  --text-primary: #1F2A1A;
+  --text-secondary: #4A5B3F;
+  --text-tertiary: #9BA890;
+  --text-on-dark: #F5F8EF;
 
   /* Gradient presets */
-  --grad-hero: radial-gradient(120% 80% at 0% 0%, #51534A 0%, #5D7E2C 35%, #88B04B 70%, #fefdfb 100%);
-  --grad-text: linear-gradient(120deg, #51534A 0%, #5D7E2C 45%, #88B04B 100%);
-  --grad-card: linear-gradient(135deg, rgba(81,83,74,0.06), rgba(136,176,75,0.06));
-  --grad-border: linear-gradient(135deg, #5D7E2C, #88B04B, #c8b878);
+  --grad-hero: radial-gradient(120% 80% at 0% 0%, #5D7E2C 0%, #7BAA5E 30%, #5EBA9A 65%, #FAFBF7 100%);
+  --grad-text: linear-gradient(120deg, #5D7E2C 0%, #7BAA5E 45%, #5EBA9A 100%);
+  --grad-card: linear-gradient(135deg, rgba(93,126,44,0.06), rgba(94,186,154,0.06));
+  --grad-border: linear-gradient(135deg, #5D7E2C, #5EBA9A, #C4E085);
 
   /* Typography */
   --font-sans: "Pretendard Variable", Pretendard, "Inter", -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --font-mono: "JetBrains Mono", "Inter", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Line height tokens */
+  --lh-display: 1.08;
+  --lh-heading: 1.2;
+  --lh-base: 1.65;
+  --lh-loose: 1.75;
 
   /* Spacing */
   --container: 1200px;
@@ -51,7 +57,7 @@
   --shadow-sm: 0 1px 2px rgba(15,23,42,0.06), 0 1px 3px rgba(15,23,42,0.04);
   --shadow-md: 0 6px 18px rgba(15,23,42,0.08), 0 2px 6px rgba(15,23,42,0.04);
   --shadow-lg: 0 20px 50px rgba(15,23,42,0.12), 0 6px 16px rgba(15,23,42,0.06);
-  --shadow-glow: 0 12px 40px rgba(93,126,44,0.25);
+  --shadow-glow: 0 12px 40px rgba(94,186,154,0.28);
 
   /* Motion */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);

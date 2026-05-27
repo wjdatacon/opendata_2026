@@ -23,7 +23,7 @@
 .sub-hero::after {
   width: 380px; height: 380px;
   top: -120px; right: -80px;
-  background: radial-gradient(circle, rgba(136,176,75,0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(94,186,154,0.25), transparent 70%);
 }
 .sub-hero-inner {
   position: relative;
@@ -58,13 +58,14 @@
   text-transform: uppercase;
 }
 .sub-hero-title {
-  font-size: clamp(32px, 4.5vw, 52px);
+  font-size: clamp(34px, 4.6vw, 56px);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  letter-spacing: -0.032em;
+  line-height: var(--lh-heading);
 }
 .sub-hero-desc {
   font-size: clamp(15px, 1.3vw, 17px);
+  line-height: var(--lh-loose);
   color: var(--text-secondary);
   max-width: 640px;
 }
@@ -75,7 +76,7 @@
 .sub-cta {
   margin: 80px 0;
   padding: 48px 40px;
-  background: linear-gradient(135deg, #2a2c25 0%, #51534A 60%, #5D7E2C 100%);
+  background: linear-gradient(135deg, #1F2A1A 0%, #5D7E2C 60%, #5EBA9A 100%);
   border-radius: var(--r-xl);
   color: #fff;
   display: flex;
@@ -90,7 +91,7 @@
   position: absolute;
   width: 320px; height: 320px;
   right: -80px; top: -80px;
-  background: radial-gradient(circle, rgba(136,176,75,0.45), transparent 70%);
+  background: radial-gradient(circle, rgba(94,186,154,0.45), transparent 70%);
   filter: blur(20px);
 }
 .sub-cta-text { position: relative; z-index: 1; }
@@ -473,7 +474,7 @@
   margin: 0 auto 64px;
   padding: 56px 36px;
   text-align: center;
-  background: linear-gradient(135deg, rgba(93,126,44,0.04), rgba(136,176,75,0.04));
+  background: linear-gradient(135deg, rgba(93,126,44,0.04), rgba(94,186,154,0.04));
   border: 1px dashed var(--border-strong);
   border-radius: var(--r-xl);
 }
