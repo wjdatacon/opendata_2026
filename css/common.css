@@ -69,8 +69,8 @@ body {
   font-size: 14.5px;
   transition: color var(--t-fast), background var(--t-fast), box-shadow var(--t-base);
 }
-.primary-nav a:hover { color: var(--primary-700); background: rgba(36,86,214,0.06); }
-.primary-nav a.is-current { color: var(--primary-700); background: rgba(36,86,214,0.10); }
+.primary-nav a:hover { color: var(--primary-700); background: rgba(93,126,44,0.06); }
+.primary-nav a.is-current { color: var(--primary-700); background: rgba(93,126,44,0.10); }
 
 /* Vertical separator between in-page anchors and sub-page links */
 .primary-nav .nav-divider {
@@ -88,12 +88,12 @@ body {
   padding: 10px 18px;
   color: #fff;
   background: linear-gradient(120deg, var(--primary-700), var(--accent));
-  box-shadow: 0 6px 18px rgba(36,86,214,0.25);
+  box-shadow: 0 6px 18px rgba(93,126,44,0.25);
   font-weight: 600;
 }
 .primary-nav .nav-cta a:hover {
   background: linear-gradient(120deg, var(--primary-600), var(--accent));
-  box-shadow: 0 10px 26px rgba(36,86,214,0.35);
+  box-shadow: 0 10px 26px rgba(93,126,44,0.35);
   color: #fff;
 }
 .primary-nav .nav-cta a.is-current {
@@ -141,7 +141,7 @@ body {
   background: linear-gradient(120deg, var(--primary-700), var(--accent));
   box-shadow: var(--shadow-glow);
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 44px rgba(36,86,214,0.32); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 44px rgba(93,126,44,0.32); }
 .btn-ghost {
   color: var(--primary-700);
   background: rgba(255,255,255,0.8);
@@ -175,7 +175,7 @@ body {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(36,86,214,0.08);
+  background: rgba(93,126,44,0.08);
   color: var(--primary-700);
   font-family: var(--font-mono), var(--font-sans);
   font-size: 12px;
@@ -219,7 +219,7 @@ body {
    Footer
    ========================= */
 .site-footer {
-  background: linear-gradient(180deg, #0b1d54 0%, #051232 100%);
+  background: linear-gradient(180deg, #2a2c25 0%, #15170f 100%);
   color: var(--text-on-dark);
   padding: 60px 0 28px;
   margin-top: 40px;
