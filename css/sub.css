@@ -18,12 +18,12 @@
 .sub-hero::before {
   width: 480px; height: 480px;
   top: -160px; left: -120px;
-  background: radial-gradient(circle, rgba(111,168,52,0.30), transparent 70%);
+  background: radial-gradient(circle, rgba(43,182,138,0.30), transparent 70%);
 }
 .sub-hero::after {
   width: 380px; height: 380px;
   top: -120px; right: -80px;
-  background: radial-gradient(circle, rgba(74,201,164,0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(40,72,172,0.25), transparent 70%);
 }
 .sub-hero-inner {
   position: relative;
@@ -49,7 +49,7 @@
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(111,168,52,0.08);
+  background: rgba(43,182,138,0.08);
   color: var(--primary-700);
   font-family: var(--font-mono), var(--font-sans);
   font-size: 12px;
@@ -76,7 +76,7 @@
 .sub-cta {
   margin: 80px 0;
   padding: 48px 40px;
-  background: linear-gradient(135deg, #2E4123 0%, #6FA834 55%, #4AC9A4 100%);
+  background: linear-gradient(135deg, #0F4A36 0%, #2BB68A 55%, #2848AC 100%);
   border-radius: var(--r-xl);
   color: #fff;
   display: flex;
@@ -91,7 +91,7 @@
   position: absolute;
   width: 320px; height: 320px;
   right: -80px; top: -80px;
-  background: radial-gradient(circle, rgba(74,201,164,0.45), transparent 70%);
+  background: radial-gradient(circle, rgba(40,72,172,0.45), transparent 70%);
   filter: blur(20px);
 }
 .sub-cta-text { position: relative; z-index: 1; }
@@ -293,7 +293,7 @@
   padding: 3px 9px;
   border-radius: 999px;
   width: max-content;
-  background: rgba(111,168,52,0.10);
+  background: rgba(43,182,138,0.10);
   color: var(--primary-700);
   margin-bottom: 4px;
 }
@@ -474,7 +474,7 @@
   margin: 0 auto 64px;
   padding: 56px 36px;
   text-align: center;
-  background: linear-gradient(135deg, rgba(111,168,52,0.04), rgba(74,201,164,0.04));
+  background: linear-gradient(135deg, rgba(43,182,138,0.04), rgba(40,72,172,0.04));
   border: 1px dashed var(--border-strong);
   border-radius: var(--r-xl);
 }
@@ -552,7 +552,7 @@
   text-transform: uppercase;
   color: var(--primary-700);
   padding: 3px 9px;
-  background: rgba(111,168,52,0.10);
+  background: rgba(43,182,138,0.10);
   border-radius: 999px;
   width: max-content;
 }
@@ -583,7 +583,7 @@
 .badge {
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(111,168,52,0.10);
+  background: rgba(43,182,138,0.10);
   color: var(--primary-700);
   font-size: 12px;
   font-family: var(--font-mono), var(--font-sans);

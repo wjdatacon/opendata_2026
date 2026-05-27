@@ -1,35 +1,35 @@
 :root {
-  /* Color — Brand (원주연두 영감 · 한 단계 밝게·채도 ↑) */
-  --primary-900: #2E4123;   /* mid forest */
-  --primary-800: #4F7124;   /* dark moss */
-  --primary-700: #6FA834;   /* main — Wonju 576C에서 명도·채도 ↑ */
-  --primary-600: #8FC55C;   /* fresh leaf */
-  --primary-500: #B5DC83;   /* light lime sage */
+  /* Color — Brand (원주시 CI: mountain mint green) */
+  --primary-900: #0F4A36;   /* deep ocean green */
+  --primary-800: #1A7958;   /* dark mint */
+  --primary-700: #2BB68A;   /* MAIN — Wonju mountain mint */
+  --primary-600: #5BC9A4;   /* light mint */
+  --primary-500: #93DCC0;   /* pale mint */
 
-  /* Color — Accent (vivid mint · lime · sunny goldenrod) */
-  --accent: #4AC9A4;        /* vivid mint teal — 그라디언트 별 */
-  --accent-cyan: #D4ED9E;   /* pale lime pop */
-  --accent-violet: #F2DD74; /* sunny goldenrod */
+  /* Color — Accent (원주시 CI: cobalt blue · sunny pop) */
+  --accent: #2848AC;        /* MAIN cobalt — Wonju water */
+  --accent-cyan: #5572D4;   /* lighter cobalt */
+  --accent-violet: #FACC54; /* warm complement (절제된 포인트) */
 
-  /* Color — Surface (한층 밝은 ivory · 옅은 그린톤) */
-  --ivory: #FBFCF6;
-  --ivory-soft: #F5F8EA;
+  /* Color — Surface (cool ivory · 옅은 mint-tint) */
+  --ivory: #FAFCFA;
+  --ivory-soft: #F0F8F4;
   --surface: #FFFFFF;
-  --surface-muted: #EFF6E0;
-  --border: #D5E0C0;
-  --border-strong: #ADC587;
+  --surface-muted: #E8F4ED;
+  --border: #D0E5D9;
+  --border-strong: #A8D0B8;
 
-  /* Color — Text (덜 무거운 forest) */
-  --text-primary: #25301B;
-  --text-secondary: #5A6B4E;
-  --text-tertiary: #A4B098;
-  --text-on-dark: #F5F8EA;
+  /* Color — Text (cool dark green) */
+  --text-primary: #0F2A22;
+  --text-secondary: #3F5A4F;
+  --text-tertiary: #8FA59A;
+  --text-on-dark: #F0F8F4;
 
-  /* Gradient presets */
-  --grad-hero: radial-gradient(120% 80% at 0% 0%, #6FA834 0%, #8FC55C 30%, #4AC9A4 65%, #FBFCF6 100%);
-  --grad-text: linear-gradient(120deg, #6FA834 0%, #8FC55C 45%, #4AC9A4 100%);
-  --grad-card: linear-gradient(135deg, rgba(111,168,52,0.06), rgba(74,201,164,0.06));
-  --grad-border: linear-gradient(135deg, #6FA834, #4AC9A4, #D4ED9E);
+  /* Gradient presets (mint → cobalt 듀얼 컬러) */
+  --grad-hero: radial-gradient(120% 80% at 0% 0%, #2BB68A 0%, #5BC9A4 30%, #2848AC 70%, #FAFCFA 100%);
+  --grad-text: linear-gradient(120deg, #2848AC 0%, #2BB68A 100%);
+  --grad-card: linear-gradient(135deg, rgba(43,182,138,0.06), rgba(40,72,172,0.06));
+  --grad-border: linear-gradient(135deg, #2BB68A, #2848AC);
 
   /* Typography */
   --font-sans: "Pretendard Variable", Pretendard, "Inter", -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
@@ -57,7 +57,7 @@
   --shadow-sm: 0 1px 2px rgba(15,23,42,0.06), 0 1px 3px rgba(15,23,42,0.04);
   --shadow-md: 0 6px 18px rgba(15,23,42,0.08), 0 2px 6px rgba(15,23,42,0.04);
   --shadow-lg: 0 20px 50px rgba(15,23,42,0.12), 0 6px 16px rgba(15,23,42,0.06);
-  --shadow-glow: 0 12px 40px rgba(74,201,164,0.30);
+  --shadow-glow: 0 12px 40px rgba(43,182,138,0.30);
 
   /* Motion */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
