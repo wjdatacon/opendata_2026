@@ -27,15 +27,6 @@
     });
   });
 
-  // ===== Contact form (placeholder) =====
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('문의 전송 기능은 추후 연결될 예정입니다.\n이메일로 직접 문의해주세요.');
-    });
-  }
-
   // ===== Evaluation tabs (sub page) =====
   const tabs = document.querySelectorAll('.eval-tab');
   if (tabs.length) {
@@ -92,26 +83,4 @@
     });
   }
 
-  // ===== Current step indicator on main page stepper =====
-  // Determines which contest stage is current based on today's date.
-  const stepper = document.querySelector('.stepper ol');
-  if (stepper) {
-    const stageEnd = [
-      new Date('2026-06-04T00:00:00+09:00'), // 홍보 시작
-      new Date('2026-07-02T18:00:00+09:00'), // 접수 마감
-      new Date('2026-07-15T23:59:00+09:00'), // 1차 결과 발표
-      new Date('2026-07-22T23:59:00+09:00'), // 공개검증 종료
-      new Date('2026-07-29T23:59:00+09:00'), // 2차 대면평가 / 시상식
-    ];
-    const items = stepper.children;
-    const now = new Date();
-    let currentIdx = 0;
-    if (now < stageEnd[0]) currentIdx = 0;
-    else if (now < stageEnd[1]) currentIdx = 1;
-    else if (now < stageEnd[2]) currentIdx = 2;
-    else if (now < stageEnd[3]) currentIdx = 3;
-    else if (now < stageEnd[4]) currentIdx = 4;
-    else currentIdx = 5;
-    if (items[currentIdx]) items[currentIdx].classList.add('is-current');
-  }
 })();

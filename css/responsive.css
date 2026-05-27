@@ -19,14 +19,12 @@
   .stepper li:last-child::after { display: none; }
 
   .awards-grid { grid-template-columns: repeat(2, 1fr); }
-  .award-grand { grid-column: span 2; }
 
   .apply-steps { grid-template-columns: 1fr; }
   .download-grid { grid-template-columns: repeat(2, 1fr); }
 
   .gallery-placeholder { grid-template-columns: repeat(2, 1fr); }
 
-  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-links { grid-column: span 2; }
 

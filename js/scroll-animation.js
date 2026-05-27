@@ -13,8 +13,6 @@
     '.apply-email',
     '.notice-brief',
     '.faq-link',
-    '.contact-info',
-    '.contact-form',
     '.eval-tabs',
     '.eval-list li',
     '.eval-extra',
