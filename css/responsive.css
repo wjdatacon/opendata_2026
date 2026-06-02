@@ -30,6 +30,17 @@
 
   .sub-cta { padding: 36px 28px; flex-direction: column; align-items: flex-start; text-align: left; }
 
+  /* Hero — stack content and poster vertically on tablet/mobile */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .hero-poster img {
+    max-width: 360px;
+    transform: rotate(0deg);
+  }
+
   .definition-card {
     grid-template-columns: 1fr;
     gap: 14px;
@@ -93,7 +104,9 @@
 
   /* Hero */
   .hero { min-height: auto; padding-top: calc(var(--header-h) + 40px); padding-bottom: 80px; }
-  .hero-inner { min-height: auto; gap: 22px; }
+  .hero-inner { min-height: auto; gap: 32px; }
+  .hero-content { gap: 22px; }
+  .hero-poster img { max-width: 300px; }
   .dday-card { padding: 16px 20px; }
   .dday-value { font-size: 40px; }
   .hero-orgs { gap: 12px; }

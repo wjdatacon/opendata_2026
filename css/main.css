@@ -53,12 +53,39 @@
 
 .hero-inner {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+  min-height: calc(100vh - var(--header-h) - 100px);
+}
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-  min-height: calc(100vh - var(--header-h) - 100px);
+}
+.hero-poster {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.hero-poster img {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 210 / 297;
+  object-fit: cover;
+  border-radius: var(--r-lg);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  transform: rotate(-1.2deg);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base);
+}
+.hero-poster img:hover {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: 0 30px 70px rgba(15,42,34,0.18), 0 12px 22px rgba(15,42,34,0.10);
 }
 .hero-eyebrow {
   font-family: var(--font-mono), var(--font-sans);
