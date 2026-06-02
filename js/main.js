@@ -34,30 +34,44 @@
       written: document.getElementById('panel-written'),
       oral: document.getElementById('panel-oral'),
     };
-    tabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        const target = tab.dataset.tab;
-        tabs.forEach((t) => {
-          const active = t === tab;
-          t.classList.toggle('is-active', active);
-          t.setAttribute('aria-selected', String(active));
-        });
-        Object.entries(panels).forEach(([key, panel]) => {
-          if (!panel) return;
-          const active = key === target;
-          panel.classList.toggle('is-active', active);
-          if (active) {
-            panel.removeAttribute('hidden');
-            // Re-trigger bar width animation on tab switch
-            panel.querySelectorAll('.bar span').forEach((bar) => {
-              const w = bar.style.width;
-              bar.style.width = '0';
-              requestAnimationFrame(() => { bar.style.width = w; });
-            });
-          } else {
-            panel.setAttribute('hidden', '');
-          }
-        });
+    const activate = (tab) => {
+      const target = tab.dataset.tab;
+      tabs.forEach((t) => {
+        const active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', String(active));
+        t.setAttribute('tabindex', active ? '0' : '-1');
+      });
+      Object.entries(panels).forEach(([key, panel]) => {
+        if (!panel) return;
+        const active = key === target;
+        panel.classList.toggle('is-active', active);
+        if (active) {
+          panel.removeAttribute('hidden');
+          panel.querySelectorAll('.bar span').forEach((bar) => {
+            const w = bar.style.width;
+            bar.style.width = '0';
+            requestAnimationFrame(() => { bar.style.width = w; });
+          });
+        } else {
+          panel.setAttribute('hidden', '');
+        }
+      });
+    };
+
+    tabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', (e) => {
+        let nextIdx = null;
+        if (e.key === 'ArrowRight') nextIdx = (idx + 1) % tabs.length;
+        else if (e.key === 'ArrowLeft') nextIdx = (idx - 1 + tabs.length) % tabs.length;
+        else if (e.key === 'Home') nextIdx = 0;
+        else if (e.key === 'End') nextIdx = tabs.length - 1;
+        if (nextIdx !== null) {
+          e.preventDefault();
+          activate(tabs[nextIdx]);
+          tabs[nextIdx].focus();
+        }
       });
     });
   }

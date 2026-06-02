@@ -653,3 +653,9 @@
   margin-bottom: 0;
   justify-content: center;
 }
+.contact-hours {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+}

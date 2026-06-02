@@ -12,7 +12,9 @@
   <meta property="og:url" content="https://wjdatacon.github.io/opendata_2026/evaluation.html" />
   <meta property="og:title" content="심사 기준 · 2026 원주시 공공데이터 활용 아이디어 공모전" />
   <meta property="og:description" content="1차 서면평가와 2차 대면평가의 배점, 평가 기준, 동점 처리 안내" />
+  <meta property="og:image" content="https://wjdatacon.github.io/opendata_2026/images/poster.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://wjdatacon.github.io/opendata_2026/images/poster.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
@@ -40,7 +42,7 @@
         </span>
       </a>
 
-      <nav class="primary-nav" aria-label="주 메뉴">
+      <nav class="primary-nav" id="primaryNav" aria-label="주 메뉴">
         <ul>
           <li><a href="index.html#about" data-nav="about">공모전 소개</a></li>
           <li><a href="index.html#schedule" data-nav="schedule">일정</a></li>
@@ -82,14 +84,14 @@
 
     <section class="section">
       <div class="container">
-        <div class="eval-tabs" role="tablist">
-          <button class="eval-tab is-active" role="tab" aria-selected="true" data-tab="written">1차 서면평가</button>
-          <button class="eval-tab" role="tab" aria-selected="false" data-tab="oral">2차 대면평가</button>
+        <div class="eval-tabs" role="tablist" aria-label="평가 단계">
+          <button class="eval-tab is-active" id="tab-written" type="button" role="tab" aria-selected="true" aria-controls="panel-written" tabindex="0" data-tab="written">1차 서면평가</button>
+          <button class="eval-tab" id="tab-oral" type="button" role="tab" aria-selected="false" aria-controls="panel-oral" tabindex="-1" data-tab="oral">2차 대면평가</button>
         </div>
 
         <div class="eval-panels">
 
-          <div class="eval-panel is-active" id="panel-written" role="tabpanel">
+          <div class="eval-panel is-active" id="panel-written" role="tabpanel" aria-labelledby="tab-written">
             <ul class="eval-list">
               <li>
                 <div class="eval-row"><span>지역현안 연계성</span><strong>20점</strong></div>
@@ -123,7 +125,7 @@
             </ul>
           </div>
 
-          <div class="eval-panel" id="panel-oral" role="tabpanel" hidden>
+          <div class="eval-panel" id="panel-oral" role="tabpanel" aria-labelledby="tab-oral" hidden>
             <ul class="eval-list">
               <li>
                 <div class="eval-row"><span>공공데이터 활용</span><strong>30점</strong></div>

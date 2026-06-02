@@ -9,7 +9,8 @@
   /* Color — Accent (원주시 CI: cobalt blue · sunny pop) */
   --accent: #2848AC;        /* MAIN cobalt — Wonju water */
   --accent-cyan: #5572D4;   /* lighter cobalt */
-  --accent-violet: #FACC54; /* warm complement (절제된 포인트) */
+  --accent-warm: #FACC54;   /* warm goldenrod — 보조 포인트 */
+  --accent-violet: var(--accent-warm); /* deprecated alias, kept for legacy refs */
 
   /* Color — Surface (cool ivory · 옅은 mint-tint) */
   --ivory: #FAFCFA;
