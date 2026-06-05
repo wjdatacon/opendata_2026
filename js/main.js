@@ -76,6 +76,52 @@
     });
   }
 
+  // ===== Lightbox (poster) =====
+  const lightboxTriggers = document.querySelectorAll('[data-lightbox-open]');
+  if (lightboxTriggers.length) {
+    let lastTrigger = null;
+
+    const openLightbox = (id, trigger) => {
+      const box = document.getElementById(id);
+      if (!box) return;
+      lastTrigger = trigger;
+      box.removeAttribute('hidden');
+      document.body.classList.add('lightbox-open');
+      const closeBtn = box.querySelector('[data-lightbox-close]');
+      if (closeBtn) closeBtn.focus();
+    };
+
+    const closeLightbox = (box) => {
+      box.setAttribute('hidden', '');
+      document.body.classList.remove('lightbox-open');
+      if (lastTrigger) lastTrigger.focus();
+      lastTrigger = null;
+    };
+
+    lightboxTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openLightbox(trigger.getAttribute('data-lightbox-open'), trigger);
+      });
+    });
+
+    document.querySelectorAll('.lightbox').forEach((box) => {
+      // close on close button
+      box.querySelectorAll('[data-lightbox-close]').forEach((btn) => {
+        btn.addEventListener('click', () => closeLightbox(box));
+      });
+      // close on backdrop click (but not when clicking the image itself)
+      box.addEventListener('click', (e) => {
+        if (e.target === box) closeLightbox(box);
+      });
+    });
+
+    // ESC closes any open lightbox
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      document.querySelectorAll('.lightbox:not([hidden])').forEach(closeLightbox);
+    });
+  }
+
   // ===== Open data filter (sub page) =====
   const filterButtons = document.querySelectorAll('.data-filter button[data-filter]');
   const grid = document.getElementById('dataGrid');

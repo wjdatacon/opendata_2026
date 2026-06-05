@@ -118,7 +118,10 @@
         </div>
 
         <figure class="hero-poster">
-          <img src="images/poster.jpg" alt="2026 원주시 공공데이터 활용 아이디어 공모전 포스터" loading="eager" />
+          <button type="button" class="hero-poster-trigger" data-lightbox-open="posterLightbox" aria-label="포스터 확대 보기">
+            <img src="images/poster.jpg" alt="2026 원주시 공공데이터 활용 아이디어 공모전 포스터" loading="eager" />
+            <span class="hero-poster-hint" aria-hidden="true">클릭해서 크게 보기</span>
+          </button>
         </figure>
       </div>
 
@@ -397,6 +400,11 @@
     </section>
 
   </main>
+
+  <div class="lightbox" id="posterLightbox" role="dialog" aria-modal="true" aria-label="포스터 확대 보기" hidden>
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="닫기">×</button>
+    <img src="images/poster.jpg" alt="2026 원주시 공공데이터 활용 아이디어 공모전 포스터" />
+  </div>
 
   <footer class="site-footer">
     <div class="container">
