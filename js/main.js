@@ -122,6 +122,46 @@
     });
   }
 
+  // ===== Home popup notice =====
+  const popup = document.getElementById('homePopup');
+  if (popup) {
+    const POPUP_KEY = 'home-popup-hide-until';
+    // Hide popup automatically after this date (application deadline)
+    const POPUP_AUTO_END = new Date('2026-07-09T00:00:00+09:00');
+
+    const dontShowInput = document.getElementById('popupDontShow');
+    const now = new Date();
+    const hideUntilStr = localStorage.getItem(POPUP_KEY);
+    const hideUntil = hideUntilStr ? new Date(hideUntilStr) : null;
+
+    const shouldShow =
+      now < POPUP_AUTO_END &&
+      (!hideUntil || isNaN(hideUntil.getTime()) || now >= hideUntil);
+
+    const closePopup = () => {
+      if (dontShowInput && dontShowInput.checked) {
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(0, 0, 0, 0);
+        localStorage.setItem(POPUP_KEY, tomorrow.toISOString());
+      }
+      popup.setAttribute('hidden', '');
+    };
+
+    if (shouldShow) {
+      setTimeout(() => {
+        popup.removeAttribute('hidden');
+      }, 350);
+    }
+
+    popup.querySelectorAll('[data-popup-close]').forEach((btn) => {
+      btn.addEventListener('click', closePopup);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !popup.hasAttribute('hidden')) closePopup();
+    });
+  }
+
   // ===== Open data filter (sub page) =====
   const filterButtons = document.querySelectorAll('.data-filter button[data-filter]');
   const grid = document.getElementById('dataGrid');
