@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 원주시 공공데이터 AI 활용 아이디어 공모전</title>
+  <meta name="description" content="2026 원주시 공공데이터 AI 활용 아이디어 공모전 공식 홈페이지. 데이터로 원주의 내일을 디자인하다." />
+  <meta name="theme-color" content="#2BB68A" />
+  <link rel="canonical" href="https://wjdatacon.github.io/opendata_2026/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wjdatacon.github.io/opendata_2026/" />
+  <meta property="og:title" content="2026 원주시 공공데이터 AI 활용 아이디어 공모전" />
+  <meta property="og:description" content="데이터로 원주의 내일을 디자인하다 — 2026 원주시 공공데이터 AI 활용 아이디어 공모전" />
+  <meta property="og:image" content="https://wjdatacon.github.io/opendata_2026/images/poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://wjdatacon.github.io/opendata_2026/images/poster.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/main2.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="main">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="홈으로">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>원주시 공공데이터 · AI 활용 아이디어 공모전</strong>
+          <em>2026</em>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="주 메뉴">
+        <ul>
+          <li><a href="index.html#about" data-nav="about">공모전 소개</a></li>
+          <li><a href="index.html#schedule" data-nav="schedule">일정</a></li>
+          <li><a href="index.html#awards" data-nav="awards">시상</a></li>
+          <li class="nav-divider" aria-hidden="true"></li>
+          <li><a href="evaluation.html" data-nav="evaluation">심사 기준</a></li>
+          <li><a href="opendata.html" data-nav="opendata">공공데이터</a></li>
+          <li><a href="notice.html" data-nav="notice">공지사항</a></li>
+          <li><a href="faq.html" data-nav="faq">FAQ</a></li>
+          <li><a href="https://wjdatacon.github.io/opendata_2025/" target="_blank" rel="noopener" data-nav="archive">지난 대회 <span aria-hidden="true">↗</span></a></li>
+          <li class="nav-cta"><a href="index.html#apply" data-nav="apply">참가 신청</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="grid-overlay"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">2026 WONJU OPEN DATA CONTEST</p>
+          <h1 class="hero-title">
+            원주의 내일을<br />
+            <span class="grad-text">데이터로 디자인하다</span>
+          </h1>
+          <p class="hero-sub">
+            2026 원주시 공공데이터 AI 활용 아이디어 공모전<br />
+            시민의 데이터로 도시의 미래를 다시 그립니다.
+          </p>
+
+          <div class="dday-card" aria-live="polite">
+            <div class="dday-label" id="ddayLabel">접수 마감까지</div>
+            <div class="dday-value">
+              <span class="dday-prefix">D-</span><span id="ddayNumber">--</span>
+            </div>
+            <div class="dday-meta" id="ddayMeta">2026.07.08(수) 18:00 마감</div>
+          </div>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#apply">참가 신청 안내</a>
+            <a class="btn btn-ghost" href="#about">공모전 소개</a>
+          </div>
+
+          <div class="hero-orgs">
+            <div class="orgs-group">
+              <span class="orgs-label">주최</span>
+              <ul class="orgs-list">
+                <li>원주시</li>
+              </ul>
+            </div>
+            <div class="orgs-group">
+              <span class="orgs-label">주관</span>
+              <ul class="orgs-list">
+                <li>강원대학교 원주캠퍼스</li>
+                <li>한라대학교</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-poster">
+          <button type="button" class="hero-poster-trigger" data-lightbox-open="posterLightbox" aria-label="포스터 확대 보기">
+            <img src="images/poster.jpg" alt="2026 원주시 공공데이터 AI 활용 아이디어 공모전 포스터" loading="eager" />
+            <span class="hero-poster-hint" aria-hidden="true">클릭해서 크게 보기</span>
+          </button>
+        </figure>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="아래로 스크롤">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section section-about" id="about">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">공모전 소개</h2>
+          <p class="section-desc">
+            공공데이터의 가치를 시민의 아이디어로 확장합니다.<br />
+            원주의 일상과 정책에 닿는 실용적인 데이터 활용을 발굴합니다.
+          </p>
+        </header>
+
+        <div class="purpose-grid">
+          <article class="purpose-card">
+            <span class="purpose-num">01</span>
+            <h3>인재 발굴</h3>
+            <p>공공데이터 활용 역량을 갖춘 예비창업자와 혁신 시민을 발굴합니다.</p>
+          </article>
+          <article class="purpose-card">
+            <span class="purpose-num">02</span>
+            <h3>대회 고도화</h3>
+            <p>1차년도 운영 경험을 바탕으로 대회의 완성도와 품질을 끌어올립니다.</p>
+          </article>
+          <article class="purpose-card">
+            <span class="purpose-num">03</span>
+            <h3>창업 연계</h3>
+            <p>중앙대회 진출 연계와 후속 창업 지원으로 아이디어를 현실로 잇습니다.</p>
+          </article>
+        </div>
+
+        <div class="stepper" aria-label="진행 단계">
+          <ol>
+            <li><span>01</span>홍보</li>
+            <li><span>02</span>참가 접수</li>
+            <li><span>03</span>1차 서면평가</li>
+            <li><span>04</span>공개검증</li>
+            <li><span>05</span>2차 대면평가</li>
+            <li><span>06</span>시상식</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section section-schedule" id="schedule">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Schedule</span>
+          <h2 class="section-title">주요 일정</h2>
+          <p class="section-desc">2026년 6월부터 8월까지, 약 2개월간의 여정을 안내합니다.</p>
+        </header>
+
+        <ul class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">2026.06.04<span>~ 07.10</span></div>
+            <div class="timeline-body">
+              <h3>홍보 기간</h3>
+              <p>공모전 안내 및 모집 홍보</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.06.08<span>~ 07.08</span></div>
+            <div class="timeline-body">
+              <h3>참가 신청 접수</h3>
+              <p>이메일 접수 · 마감 2026.07.08(수) 18:00</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.07.13<span>~ 07.17</span></div>
+            <div class="timeline-body">
+              <h3>1차 서면평가 진행</h3>
+              <p>협력기관 담당자 7인 서면 심사</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.07.20</div>
+            <div class="timeline-body">
+              <h3>1차 서면평가 결과 발표</h3>
+              <p>개인 · 팀별 개별 통보</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.07.20<span>~ 07.26</span></div>
+            <div class="timeline-body">
+              <h3>공개검증</h3>
+              <p>홈페이지 게시 후 부정행위 신고 접수 운영</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.07 말<span>(예정)</span></div>
+            <div class="timeline-body">
+              <h3>2차 대면평가 · 시상식</h3>
+              <p>현장 발표 평가 후 시상식 진행 · 일시·장소는 합격자 대상 추후 공지</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">2026.08 중순</div>
+            <div class="timeline-body">
+              <h3>본선 진출 팀 중앙부처 전달</h3>
+              <p>전국 단위 대회 연계 지원</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section section-awards" id="awards">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Awards</span>
+          <h2 class="section-title">시상 내역</h2>
+          <p class="section-desc">
+            총 상금 <strong>3,000,000원</strong> + 협력기관 특별상
+          </p>
+        </header>
+
+        <div class="awards-grid">
+          <article class="award-card award-grand">
+            <span class="award-rank">대상</span>
+            <h3 class="award-prize">1,200,000원</h3>
+            <p class="award-team">1팀</p>
+          </article>
+          <article class="award-card">
+            <span class="award-rank">최우수상</span>
+            <h3 class="award-prize">각 600,000원</h3>
+            <p class="award-team">2팀</p>
+          </article>
+          <article class="award-card">
+            <span class="award-rank">우수상</span>
+            <h3 class="award-prize">각 200,000원</h3>
+            <p class="award-team">3팀</p>
+          </article>
+          <article class="award-card">
+            <span class="award-rank">특별상</span>
+            <h3 class="award-prize">협력기관 시상</h3>
+            <p class="award-team">기관별 최대 1팀</p>
+          </article>
+        </div>
+
+        <p class="awards-note">
+          ※ 평균 점수 70점 이하인 경우 시상 규모가 조정될 수 있으며, 상금은 원주사랑상품권(모바일)으로 지급될 수 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Apply -->
+    <section class="section section-apply" id="apply">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Apply</span>
+          <h2 class="section-title">참가 신청 안내</h2>
+          <p class="section-desc">
+            대한민국 국민 누구나, 개인 또는 4인 이내 팀<br />
+            접수 기간: <strong>2026.06.08(월) ~ 07.08(수) 18:00</strong>
+          </p>
+        </header>
+
+        <ol class="apply-steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>서류 다운로드</h3>
+            <p>아래에서 5종 양식(신청서 · 기획 제안서 · 동의서 2종 · 서약서)을 받습니다.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>작성 및 서명</h3>
+            <p>한글 파일 작성 후 인쇄·서명하여 스캔합니다.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>이메일 제출</h3>
+            <p>HWP 원본 + <strong>PDF 변환본</strong> + 서명 스캔본을 운영사무국으로 제출.</p>
+          </li>
+        </ol>
+
+        <div class="apply-section-head">
+          <span class="apply-section-eyebrow">STEP 1</span>
+          <h3 class="apply-section-title">제출 서류 5종 다운로드</h3>
+        </div>
+
+        <div class="download-grid">
+          <a class="download-card" href="downloads/application.hwp" download="참가 신청서.hwp">
+            <span class="dl-type">HWP</span>
+            <h3>참가 신청서</h3>
+            <p>참가자(팀) 기본 정보 양식</p>
+            <span class="dl-btn">다운로드</span>
+          </a>
+          <a class="download-card" href="downloads/proposal.hwp" download="아이디어 기획 제안서.hwp">
+            <span class="dl-type">HWP</span>
+            <h3>아이디어 기획 제안서</h3>
+            <p>지역 현안·활용 데이터·AI 활용안 작성</p>
+            <span class="dl-btn">다운로드</span>
+          </a>
+          <a class="download-card" href="downloads/consent-privacy.hwp" download="개인정보 동의서.hwp">
+            <span class="dl-type">HWP</span>
+            <h3>개인정보 동의서</h3>
+            <p>참가자 전원 서명 필요</p>
+            <span class="dl-btn">다운로드</span>
+          </a>
+          <a class="download-card" href="downloads/consent-disclosure.hwp" download="아이디어 제3자 공개 동의서.hwp">
+            <span class="dl-type">HWP</span>
+            <h3>아이디어 제3자 공개 동의서</h3>
+            <p>공개검증 기간 PDF 게시 동의</p>
+            <span class="dl-btn">다운로드</span>
+          </a>
+          <a class="download-card" href="downloads/pledge.hwp" download="참가자 서약서.hwp">
+            <span class="dl-type">HWP</span>
+            <h3>참가자 서약서</h3>
+            <p>표절·대리작성·중복출품 금지 서약</p>
+            <span class="dl-btn">다운로드</span>
+          </a>
+          <a class="download-card download-card-bundle" href="downloads/all-forms.zip" download="2026 원주시 공공데이터 공모전 신청서류 5종.zip">
+            <span class="dl-type">ZIP</span>
+            <h3>5종 한 번에 받기</h3>
+            <p>참가 신청서·기획 제안서·동의서 2종·서약서를 한 번에 다운로드</p>
+            <span class="dl-btn">일괄 다운로드</span>
+          </a>
+        </div>
+
+        <div class="apply-section-head">
+          <span class="apply-section-eyebrow">STEP 2</span>
+          <h3 class="apply-section-title">이메일로 제출</h3>
+        </div>
+
+        <div class="apply-email">
+          <span>제출처</span>
+          <code id="submitEmail">edu@raizegls.com</code>
+          <button class="copy-btn" data-copy-target="submitEmail" type="button">복사</button>
+        </div>
+
+        <div class="notice-brief">
+          <h3>핵심 유의사항</h3>
+          <ul>
+            <li>제출 형식: 한글(HWP) 원본 · <strong>PDF 변환본</strong> · 서명 스캔본 모두 포함 (필수)</li>
+            <li>본인 또는 팀이 직접 작성한 결과물에 한함</li>
+            <li>저작권 및 데이터 출처는 반드시 명시</li>
+          </ul>
+        </div>
+
+        <a href="faq.html" class="faq-link">
+          <div>
+            <strong>더 자세한 안내는 FAQ에서 확인하세요</strong>
+            <span>참가 자격, 팀 구성, 저작권 등 자주 묻는 질문과 전체 유의사항</span>
+          </div>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">문의하기</h2>
+          <p class="section-desc">
+            운영사무국 이메일로 문의해주세요.
+          </p>
+        </header>
+        <div class="apply-email contact-email">
+          <span>이메일</span>
+          <code id="contactEmail">edu@raizegls.com</code>
+          <button class="copy-btn" data-copy-target="contactEmail" type="button">복사</button>
+        </div>
+        <p class="contact-hours">평일 09:00 – 18:00 · 영업일 2일 내 회신</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="posterLightbox" role="dialog" aria-modal="true" aria-label="포스터 확대 보기" hidden>
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="닫기">×</button>
+    <img src="images/poster.jpg" alt="2026 원주시 공공데이터 AI 활용 아이디어 공모전 포스터" />
+  </div>
+
+  <!-- Home popup notice -->
+  <div class="home-popup" id="homePopup" role="dialog" aria-modal="true" aria-labelledby="homePopupTitle" hidden>
+    <div class="home-popup-wrapper">
+
+      <!-- 상위 박스 헤더 (닫기 버튼) -->
+      <div class="home-popup-wrapper-header">
+        <span class="home-popup-wrapper-label">📢 공지사항</span>
+        <button type="button" class="home-popup-close" data-popup-close aria-label="닫기">×</button>
+      </div>
+
+      <!-- 카드 영역 -->
+      <div class="home-popup-multi">
+
+        <!-- 카드 1 -->
+        <div class="home-popup-card">
+          <h2 id="homePopupTitle" class="home-popup-title">공공데이터 활용 방법 소개</h2>
+          <p class="home-popup-sub">제2회 원주시 공공데이터 AI 활용 아이디어 공모전 참가자를 위한 공공데이터 활용 방법 안내</p>
+
+          <dl class="home-popup-info">
+            <div>
+              <dt>일정</dt>
+              <dd><strong>2026.06.11(목) 14:00</strong> <span style="margin-left:6px;color:#e03131;font-weight:700;">(종료)</span></dd>
+            </div>
+            <div>
+              <dt>참여 기관</dt>
+              <dd>원주시 혁신도시 협력기관</dd>
+            </div>
+            <div>
+              <dt>주요 내용</dt>
+              <dd>기관별 데이터·핵심 데이터셋 소개, 활용 아이디어, 데이터 접근 방법 등<br /><span class="muted">기관별 10분 내외</span></dd>
+            </div>
+            <div>
+              <dt>참가 대상</dt>
+              <dd>공모전에 관심을 가진 학생·기업·기관·일반인 누구나</dd>
+            </div>
+            <div>
+              <dt>참여 방법</dt>
+              <dd>온라인 Zoom 진행<br /><span class="muted">발표 영상은 추후 공모전 웹사이트에 녹화본으로 공지 예정</span></dd>
+            </div>
+          </dl>
+
+          <div class="home-popup-actions">
+            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="location.href='https://wjdatacon.github.io/opendata_2026/notice.html'">설명회 다시보기</button>
+          </div>
+        </div>
+
+        <!-- 카드 2 (복제본) -->
+        <div class="home-popup-card">
+          <h2 class="home-popup-title">심사 기준 정정 공고</h2>
+          <p class="home-popup-sub">제2회 원주시 공공데이터 AI 활용 아이디어 공모전 심사 기준 일부 정정 안내</p>
+
+          <dl class="home-popup-info">
+            <div>
+              <dt>수정 전</dt>
+              <dd><strong>데이터 활용의 타당성</strong><br />AI모델에 사용하는 공공데이터가 적절하며 필수적인가?</dd>
+            </div>
+            <div>
+              <dt>수정 후</dt>
+              <dd><strong>공공데이터 활용성</strong><br />출품된 아이디어에 공공데이터가 적절히 활용되었는가?<br /><span class="muted">ㆍ배점: 20점(변동 없음)</span></dd>
+            </div>
+          </dl>
+
+          <div class="home-popup-actions">
+            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="window.open('https://www.wonju.go.kr/www/selectBbsNttView.do?key=216&bbsNo=140&nttNo=485976&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=', '_blank')">정정 공고 확인</button>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- 상위 박스 푸터 (오늘 하루 보지 않기) -->
+      <div class="home-popup-wrapper-footer">
+        <label class="home-popup-dontshow">
+          <input type="checkbox" id="popupDontShowGlobal" />
+          <span>오늘 하루 보지 않기</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>2026 원주시 공공데이터 AI 활용 아이디어 공모전</strong>
+          <p>주최 원주시</p>
+          <p>주관 강원대학교 원주캠퍼스 · 한라대학교</p>
+        </div>
+        <div class="footer-orgs">
+          <p class="footer-orgs-label">협력기관</p>
+          <ul>
+            <li>국립공원공단</li>
+            <li>국민건강보험공단</li>
+            <li>대한적십자사</li>
+            <li>한국관광공사</li>
+            <li>한국광해광업공단</li>
+            <li>한국도로교통공단</li>
+            <li>한국보훈복지의료공단</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-label">바로가기</p>
+          <ul>
+            <li><a href="evaluation.html">심사 기준</a></li>
+            <li><a href="opendata.html">공공데이터</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#contact">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="privacy.html">개인정보처리방침</a>
+        <p>© 2026 Wonju Open Data Contest. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/countdown.js" defer></script>
+  <script src="js/scroll-animation.js" defer></script>
+</body>
+</html>
