@@ -129,7 +129,7 @@
     // Hide popup automatically after this date (application deadline)
     const POPUP_AUTO_END = new Date('2026-07-09T00:00:00+09:00');
 
-    const dontShowInput = document.getElementById('popupDontShow');
+    const dontShowInput = document.getElementById('popupDontShowGlobal');
     const now = new Date();
     const hideUntilStr = localStorage.getItem(POPUP_KEY);
     const hideUntil = hideUntilStr ? new Date(hideUntilStr) : null;

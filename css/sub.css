@@ -255,6 +255,7 @@
   color: var(--text-secondary);
   margin-bottom: 18px;
   max-width: 780px;
+  word-break: keep-all;
 }
 .notice-detail {
   display: flex;
@@ -283,9 +284,16 @@
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-primary);
+  word-break: keep-all;
 }
 .notice-detail dd strong { color: var(--primary-700); }
 .notice-detail dd .muted { color: var(--text-tertiary); font-size: 13px; }
+.notice-detail dd a {
+  color: var(--primary-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.notice-detail dd a:hover { color: var(--primary-800, var(--primary-700)); }
 .notice-empty-hint {
   margin: 24px 0 0;
   text-align: center;

@@ -209,7 +209,7 @@ body.lightbox-open { overflow: hidden; }
 .home-popup-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1600px;
   max-height: calc(100vh - 48px);
   overflow-y: auto;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -236,7 +236,7 @@ body.lightbox-open { overflow: hidden; }
   letter-spacing: 0.01em;
 }
 
-/* 2-card side-by-side wrapper */
+/* side-by-side wrapper */
 .home-popup-multi {
   display: flex;
   flex-direction: row;
@@ -272,6 +272,12 @@ body.lightbox-open { overflow: hidden; }
   cursor: pointer;
   transition: background 0.18s var(--ease-out), color 0.18s var(--ease-out);
   flex-shrink: 0;
+  padding: 0;
+}
+.home-popup-close::before {
+  content: "\00d7";
+  display: block;
+  margin-top: -1px;
 }
 .home-popup-close:hover {
   background: rgba(0, 0, 0, 0.4);
