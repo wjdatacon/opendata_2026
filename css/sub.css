@@ -537,6 +537,28 @@
   background: rgba(124,58,237,0.10);
   color: var(--accent-warm);
 }
+/* 공개검증: 한글 태그는 넓은 자간·대문자 변환이 불필요 */
+body[data-page="verify"] .data-card .data-tag {
+  letter-spacing: 0;
+  text-transform: none;
+}
+/* 공개검증: 기간 외 안내 메시지 */
+.verify-closed {
+  text-align: center;
+  padding: 56px 28px;
+  border: 1px dashed var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.verify-closed h3 {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.verify-closed p {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
 .data-card h3 { font-size: 17px; }
 .data-card p { color: var(--text-secondary); font-size: 14px; flex: 1; }
 .data-link {
