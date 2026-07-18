@@ -542,6 +542,10 @@ body[data-page="verify"] .data-card .data-tag {
   letter-spacing: 0;
   text-transform: none;
 }
+/* 공개검증: 설명 문구가 없어도 링크를 카드 하단에 정렬 */
+body[data-page="verify"] .data-card .data-link {
+  margin-top: auto;
+}
 /* 공개검증: 기간 외 안내 메시지 */
 .verify-closed {
   text-align: center;
