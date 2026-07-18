@@ -12,7 +12,7 @@
    ※ 미리보기: 주소 끝에 ?preview 를 붙이면 상태와 상관없이 카드를 표시합니다.
    =================================================================== */
 
-const VERIFY_STATE = 'open'; // ← 'before' | 'open' | 'after' 중 하나로 변경
+const VERIFY_STATE = 'before'; // ← 'before' | 'open' | 'after' 중 하나로 변경
 
 (() => {
   const grid = document.getElementById('verifyGrid');
