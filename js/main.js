@@ -125,9 +125,11 @@
   // ===== Home popup notice =====
   const popup = document.getElementById('homePopup');
   if (popup) {
-    const POPUP_KEY = 'home-popup-hide-until';
-    // Hide popup automatically after this date (application deadline)
-    const POPUP_AUTO_END = new Date('2026-07-09T00:00:00+09:00');
+    // 공개검증 안내 팝업 — 키를 새로 두어 이전 팝업 "오늘 하루 보지 않기" 이력과 분리
+    const POPUP_KEY = 'home-popup-hide-until-verify';
+    // 공개검증 기간에만 노출 (07.20 ~ 07.26, 종료 다음날 자동 종료)
+    const POPUP_AUTO_START = new Date('2026-07-20T00:00:00+09:00');
+    const POPUP_AUTO_END = new Date('2026-07-27T00:00:00+09:00');
 
     const dontShowInput = document.getElementById('popupDontShowGlobal');
     const now = new Date();
@@ -135,6 +137,7 @@
     const hideUntil = hideUntilStr ? new Date(hideUntilStr) : null;
 
     const shouldShow =
+      now >= POPUP_AUTO_START &&
       now < POPUP_AUTO_END &&
       (!hideUntil || isNaN(hideUntil.getTime()) || now >= hideUntil);
 

@@ -410,98 +410,48 @@
 
   <!-- Home popup notice -->
   <div class="home-popup" id="homePopup" role="dialog" aria-modal="true" aria-labelledby="homePopupTitle" hidden>
-    <div class="home-popup-wrapper">
+    <div class="home-popup-wrapper home-popup-wrapper--single">
 
       <!-- 상위 박스 헤더 (닫기 버튼) -->
       <div class="home-popup-wrapper-header">
-        <span class="home-popup-wrapper-label">📢 공지사항</span>
+        <span class="home-popup-wrapper-label">📢 공개검증 안내</span>
         <button type="button" class="home-popup-close" data-popup-close aria-label="닫기"></button>
       </div>
 
       <!-- 카드 영역 -->
       <div class="home-popup-multi">
 
-        <!-- 카드 1 -->
+        <!-- 카드 1 (공개검증) -->
         <div class="home-popup-card">
-          <h2 id="homePopupTitle" class="home-popup-title">공공데이터 활용 방법 소개</h2>
-          <p class="home-popup-sub">제2회 원주시 공공데이터 AI 활용 아이디어 공모전 참가자를 위한 공공데이터 활용 방법 안내</p>
+          <h2 id="homePopupTitle" class="home-popup-title">1차 서면평가 결과 및 공개검증</h2>
+          <p class="home-popup-sub">1차 서면평가를 통과한 아이디어를 공개하여, 대면평가 전 표절·중복·부정 소지를 사전에 확인하는 절차입니다. 2차 대면평가 진출팀에는 개별적으로 별도 연락드립니다.</p>
 
           <dl class="home-popup-info">
             <div>
-              <dt>일정</dt>
-              <dd><strong>2026.06.11(목) 14:00</strong> <span style="margin-left:6px;color:#e03131;font-weight:700;">(종료)</span></dd>
+              <dt>기간</dt>
+              <dd><strong>2026.07.20(월) ~ 07.26(일)</strong></dd>
             </div>
             <div>
-              <dt>참여 기관</dt>
-              <dd>원주시 혁신도시 협력기관</dd>
+              <dt>대상</dt>
+              <dd>1차 서면평가 통과 아이디어</dd>
             </div>
             <div>
-              <dt>주요 내용</dt>
-              <dd>기관별 데이터·핵심 데이터셋 소개, 활용 아이디어, 데이터 접근 방법 등<br /><span class="muted">기관별 10분 내외</span></dd>
+              <dt>확인 방법</dt>
+              <dd>홈페이지 <strong>공개검증</strong> 게시판에서 각 아이디어 PDF 열람<br /><span class="muted">공개검증 기간 누구나 열람할 수 있습니다</span></dd>
             </div>
             <div>
-              <dt>참가 대상</dt>
-              <dd>공모전에 관심을 가진 학생·기업·기관·일반인 누구나</dd>
-            </div>
-            <div>
-              <dt>참여 방법</dt>
-              <dd>온라인 Zoom 진행<br /><span class="muted">발표 영상은 추후 공모전 웹사이트에 녹화본으로 공지 예정</span></dd>
+              <dt>이상 신고</dt>
+              <dd>표절·중복·부정 소지 발견 시 운영사무국 이메일로 신고<br /><span class="muted">edu@raizegls.com</span></dd>
             </div>
           </dl>
 
           <div class="home-popup-actions">
-            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="location.href='https://wjdatacon.github.io/opendata_2026/notice.html'">설명회 다시보기</button>
-          </div>
-        </div>
-
-        <!-- 카드 2 (복제본) -->
-        <div class="home-popup-card">
-          <h2 class="home-popup-title">심사 기준 정정 공고</h2>
-          <p class="home-popup-sub">제2회 원주시 공공데이터 AI 활용 아이디어 공모전 심사 기준 일부 정정 안내</p>
-
-          <dl class="home-popup-info">
-            <div>
-              <dt>수정 전</dt>
-              <dd><strong>데이터 활용의 타당성</strong><br />AI모델에 사용하는 공공데이터가 적절하며 필수적인가?</dd>
-            </div>
-            <div>
-              <dt>수정 후</dt>
-              <dd><strong>공공데이터 활용성</strong><br />출품된 아이디어에 공공데이터가 적절히 활용되었는가?<br /><span class="muted">ㆍ배점: 20점(변동 없음)</span></dd>
-            </div>
-          </dl>
-
-          <div class="home-popup-actions">
-            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="window.open('https://www.wonju.go.kr/www/selectBbsNttView.do?key=216&bbsNo=140&nttNo=485976&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=', '_blank')">정정 공고 확인</button>
-          </div>
-        </div>
-
-        <!-- 카드 3 (지난 대회 수상작) -->
-        <div class="home-popup-card">
-          <h2 class="home-popup-title">지난 대회 수상작</h2>
-          <p class="home-popup-sub">제1회 원주시 공공데이터 활용 아이디어 공모전 수상작을 둘러보고 아이디어 구상에 참고하세요</p>
-
-          <dl class="home-popup-info">
-            <div>
-              <dt>대회</dt>
-              <dd>제1회 원주시 공공데이터 활용 아이디어 공모전 <span class="muted">(2025)</span></dd>
-            </div>
-            <div>
-              <dt>내용</dt>
-              <dd>수상작 출품물과 아이디어 기획·데이터 활용 사례를 확인할 수 있습니다</dd>
-            </div>
-            <div>
-              <dt>활용 팁</dt>
-              <dd>수상작의 데이터 활용 방식과 기획 흐름을 참고하면 아이디어를 구체화하는 데 도움이 됩니다</dd>
-            </div>
-          </dl>
-
-          <div class="home-popup-actions">
-            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="window.open('https://wjdatacon.github.io/opendata_2025/finalentry.html', '_blank')">수상작 보러가기</button>
+            <button type="button" class="btn btn-primary home-popup-confirm" data-popup-close onclick="location.href='https://wjdatacon.github.io/opendata_2026/verify.html'">공개검증 보러가기</button>
           </div>
         </div>
 
       </div>
-      
+
       <!-- 상위 박스 푸터 (오늘 하루 보지 않기) -->
       <div class="home-popup-wrapper-footer">
         <label class="home-popup-dontshow">

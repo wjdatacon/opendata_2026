@@ -221,6 +221,9 @@ body.lightbox-open { overflow: hidden; }
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* 단일 카드일 때 wrapper 폭 축소 */
+.home-popup-wrapper--single { max-width: 560px; }
+
 /* 상위 wrapper 헤더 */
 .home-popup-wrapper-header {
   display: flex;
