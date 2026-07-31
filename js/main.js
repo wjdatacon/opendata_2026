@@ -125,11 +125,11 @@
   // ===== Home popup notice =====
   const popup = document.getElementById('homePopup');
   if (popup) {
-    // 공개검증 안내 팝업 — 키를 새로 두어 이전 팝업 "오늘 하루 보지 않기" 이력과 분리
-    const POPUP_KEY = 'home-popup-hide-until-verify';
-    // 공개검증 기간에만 노출 (07.20 ~ 07.26, 종료 다음날 자동 종료)
-    const POPUP_AUTO_START = new Date('2026-07-20T00:00:00+09:00');
-    const POPUP_AUTO_END = new Date('2026-07-27T00:00:00+09:00');
+    // 최종 결과 발표 팝업 — 키를 새로 두어 이전 팝업 "오늘 하루 보지 않기" 이력과 분리
+    const POPUP_KEY = 'home-popup-hide-until-result';
+    // 최종 결과 발표 이후 노출 (07.30 발표 ~ 08.31 자동 종료)
+    const POPUP_AUTO_START = new Date('2026-07-30T00:00:00+09:00');
+    const POPUP_AUTO_END = new Date('2026-09-01T00:00:00+09:00');
 
     const dontShowInput = document.getElementById('popupDontShowGlobal');
     const now = new Date();

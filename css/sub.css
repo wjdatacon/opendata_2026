@@ -144,6 +144,19 @@
   color: var(--text-secondary);
   max-width: 760px;
 }
+.def-highlight {
+  margin-top: 6px;
+  padding: 14px 18px;
+  max-width: 760px;
+  border-radius: var(--r-md);
+  background: rgba(43,182,138,0.08);
+  border: 1px solid rgba(43,182,138,0.22);
+  font-size: clamp(14px, 1.1vw, 15.5px);
+  line-height: 1.65;
+  color: var(--text-primary);
+  word-break: keep-all;
+}
+.def-highlight strong { color: var(--primary-700); }
 .def-source {
   display: flex;
   align-items: center;
@@ -571,6 +584,96 @@ body[data-page="verify"] .data-card .data-link {
   font-size: 13px;
   color: var(--primary-700);
   font-weight: 600;
+}
+
+/* =========================
+   최종 결과 (Final result) 표
+   ========================= */
+.result-group { margin-bottom: 44px; }
+.result-group:last-of-type { margin-bottom: 0; }
+.result-group-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.result-group-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.result-group-badge.main {
+  background: linear-gradient(120deg, var(--primary-700), var(--accent-cyan));
+  color: #fff;
+}
+.result-group-badge.special {
+  background: rgba(40,72,172,0.12);
+  color: var(--accent);
+}
+.result-group-count {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+}
+.result-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  background: var(--surface);
+  -webkit-overflow-scrolling: touch;
+}
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+.result-table thead th {
+  text-align: left;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-tertiary);
+  padding: 14px 20px;
+  background: var(--surface-muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.result-table tbody td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14.5px;
+  line-height: 1.6;
+  vertical-align: top;
+  word-break: keep-all;
+}
+.result-table tbody tr:last-child td { border-bottom: none; }
+.result-table tbody tr:hover { background: var(--ivory-soft); }
+.result-table .col-award { width: 118px; }
+.result-table .col-award-special { width: 176px; }
+.result-table .col-team { width: 148px; }
+.result-award {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.result-award.grand { background: linear-gradient(120deg, var(--primary-700), var(--accent-cyan)); color: #fff; }
+.result-award.honor { background: rgba(43,182,138,0.16); color: var(--primary-700); }
+.result-award.merit { background: rgba(43,182,138,0.08); color: var(--primary-700); }
+.result-award-text { font-weight: 700; color: var(--accent); font-size: 13.5px; }
+.result-team { font-weight: 700; color: var(--text-primary); }
+.result-title { color: var(--text-secondary); }
+@media (max-width: 768px) {
+  .result-table thead th, .result-table tbody td { padding: 13px 16px; }
 }
 
 /* =========================
