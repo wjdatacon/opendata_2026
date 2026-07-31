@@ -20,14 +20,10 @@
       label: '공개검증 종료까지',
       meta: '2026.07.20(월) ~ 07.26(일)',
     },
-    {
-      until: new Date('2026-08-01T00:00:00+09:00'),
-      label: '본선 평가까지',
-      meta: '2026.07 말 (예정) · 합격자 대상 추후 공지',
-    },
   ];
 
   const ddayPrefix = document.querySelector('.dday-prefix');
+  const ddayCard = document.querySelector('.dday-card');
 
   const render = () => {
     const now = new Date();
@@ -39,12 +35,14 @@
     if (!active) {
       // After contest end
       labelEl.textContent = '공모전이 종료되었습니다';
-      numberEl.textContent = 'END';
+      numberEl.textContent = '종료';
       if (ddayPrefix) ddayPrefix.style.display = 'none';
+      if (ddayCard) ddayCard.classList.add('is-ended');
       metaEl.textContent = '관심과 참여에 감사드립니다.';
       return;
     }
 
+    if (ddayCard) ddayCard.classList.remove('is-ended');
     if (ddayPrefix) ddayPrefix.style.display = '';
     labelEl.textContent = active.label;
     metaEl.textContent = active.meta;

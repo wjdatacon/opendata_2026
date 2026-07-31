@@ -444,6 +444,13 @@ body.home-popup-open { overflow: hidden; }
   background-clip: text;
   color: transparent;
 }
+.dday-card.is-ended .dday-value {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  padding-left: 0.14em; /* 자간으로 인한 우측 쏠림 보정 */
+}
 .dday-meta {
   font-size: 13px;
   color: var(--text-tertiary);
